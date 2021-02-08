@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11C.02.01 the Big Fat String</title>
+
+
+<style>
+    input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color:rosybrown;
+  color: white;
+  padding: 14px 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: peachpuff;
+}
+
+div {
+  border-radius: 5px;
+  background-color: peru;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+    <!-- Form from https://www.w3schools.com/css/css_form.asp -->
+    <div id="bigfatstringform">
+        <form action="" return false;>
+          <label for="input">Input</label>
+          <input type="text" id="input" name="input" placeholder="Input...">
+      
+          <label for="choice">Choose output</label>
+          <select id="choice" name="choice">
+            <option value="option1">If input is a first name: Make the first character in a name uppercase,
+                and the rest lowercase</option>
+
+            <option value="option2">If input is a full name: Find the first name</option>
+
+            <option value="option3">If input is a full name: Find the length of the first name</option>
+
+            <option value="option4">If input is a full name: Find the middle name start and end position,
+                            and the middle name itself in a full name string</option>
+
+            <option value="option5">If input is a filename: Check if a filename is .png or .jpg</option>
+
+            <option value="option6">If input is a password: Hide a password with the correct number of *s</option>
+
+            <option value="option7">With any input: Make the third character uppercase</option>
+
+            <option value="option8">With any input: Make a character uppercase, if it follows a space or a
+                                            hyphen</option>
+          </select>
+        
+          <label for="output">Output</label>
+          <input type="text" id="output" name="output" placeholder="Output...">
+
+          <input id="generateoutputbutton" type="submit" value="Generate output">
+        </form>
+      </div>
+
+
+    
+    <script src="bigfatstring.js"></script>
+</body>
+</html>
